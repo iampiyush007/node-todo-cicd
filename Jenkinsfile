@@ -3,6 +3,7 @@ pipeline{
     stages{
         stage("git-clone"){
             steps{
+                echo "git-clone done"
                 git 'https://github.com/LondheShubham153/node-todo-cicd.git'
             }
         }
